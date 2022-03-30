@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loruki Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
     crossorigin="anonymous"
@@ -14,7 +15,7 @@
 <body>
     <!--Navbar-->
     <div class="navbar">
-        <div class="container">
+        <div class="container flex">
             <h1 class="logo">Loruki.</h1>
             <nav>
                 <ul>
@@ -25,6 +26,61 @@
             </nav>
         </div>
     </div>
+    <!--Showcase-->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Easier Deployment</h1>
+                <p>
+                    Deployment in software and web development means pushing changes
+                     or updates from one deployment environment to another. 
+                     When setting up a website you will always have your live website, 
+                    which is called the live environment or production environment.
+                </p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="showcase-form card">
+                <h2>Request a Demo</h2>
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email"required>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--stats-->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center ">
+                Welcome to the best platform for building applications of all types with modern architecture and scaling
+            </h3>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>10,345,475</h3>
+                    <p class="text-secondary">Deployments</p>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">Published</p>
+                </div>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>2,775,456</h3>
+                    <p class="text-secondary">Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

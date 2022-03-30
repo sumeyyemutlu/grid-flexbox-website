@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 *{
     box-sizing: border-box;
@@ -128,4 +131,28 @@ img{
 .cli .grid > *:first-child{
     grid-column: 1 / span 2; /* 1 den 2.ci sütün çizgisinin sonuna kadar kadar uzansın dedik*/
     grid-row: 1 / span 2;
+}
+.colud .grid{
+    grid-template-columns: 4fr 3fr ;
+}
+/*languages*/
+
+.languages .flex{
+    flex-wrap: wrap;
+}
+.languages .card{
+    margin: 18px 10px 40px;
+    text-align: center;
+    transition: transform ease-in-out 0.2s;
+}
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.languages .card:hover{
+    transform: translateY(-15px);
+}
+/*footer*/
+.footer .social a{
+    margin:0 10px
 }
